@@ -9,6 +9,8 @@
 サトウキビとパイナップルのデータがありますが、手動でダウンロードするのは面倒なので下記コマンドを実行してdatasetsをダウンロードしてください。
 
 ```bash
+cd manage-dataset
+
 # 環境変数をセット
 # Sugarcane Version 5
 $sugarcane_url="https://app.roboflow.com/ds/gethDX7bpc?key=l2lWEbZzPK"
