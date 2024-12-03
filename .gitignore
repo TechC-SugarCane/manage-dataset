@@ -1,0 +1,13 @@
+datasets/
+
+*.txt
+
+**/images/
+**/labels/
+
+*.jpeg
+*.jpg
+*.png
+
+*.zip
+*.tar.gz
