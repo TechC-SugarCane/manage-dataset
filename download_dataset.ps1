@@ -13,6 +13,8 @@ function Download-Dataset {
         [string]$url
     )
 
+    Write-Host "===== $name ====="
+
     $download_dataset_dir = "$dataset_dir\$name"
     if (Test-Path -Path $download_dataset_dir) {
         Write-Host "$name dataset already exists."

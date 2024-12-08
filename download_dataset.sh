@@ -5,6 +5,9 @@ pineapple_url=${2}
 dataset_dir="datasets"
 
 download_dataset() {
+
+    echo "===== ${1} ====="
+
     download_dataset_dir="${dataset_dir}/${1}"
     if [ -d ${download_dataset_dir} ]; then
         echo "${1} dataset already exists."
