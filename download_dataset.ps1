@@ -16,7 +16,11 @@ function Download-Dataset {
     $download_dataset_dir = "$dataset_dir\$name"
     if (Test-Path -Path $download_dataset_dir) {
         Write-Host "$name dataset already exists."
-        $response = Read-Host "Do you want to remove it? (y/n)"
+        Write-Host "If you want to get the latest dataset, please remove the existing dataset."
+        $response = Read-Host "Do you want to remove it? (y/n) [n]"
+        if ([string]::IsNullOrEmpty($response)) {
+            $response = 'n'
+        }
         if ($response -eq 'y' -or $response -eq 'Y') {
             Remove-Item -Recurse -Force -Path $download_dataset_dir
         } else {

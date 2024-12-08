@@ -8,7 +8,9 @@ download_dataset() {
     download_dataset_dir="${dataset_dir}/${1}"
     if [ -d ${download_dataset_dir} ]; then
         echo "${1} dataset already exists."
-        read -p "Do you want to remove it? (y/n) " -n 1 -r
+        echo "If you want to get the latest dataset, please remove the existing dataset."
+        read -p "Do you want to remove it? (Y/n) [n]" -n 1 -r
+        REPLY=${REPLY:-n}
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]; then
             rm -rf ${download_dataset_dir}
