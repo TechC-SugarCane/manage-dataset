@@ -12,10 +12,10 @@
 cd manage-dataset
 
 # 環境変数をセット
-# Sugarcane Version 6
-$sugarcane_url="https://app.roboflow.com/ds/QAHiMAQGaa?key=Qy252XPqJm"
-# Pineapple Version 2
-$pineapple_url="https://app.roboflow.com/ds/hfpq9ajFvM?key=5Rq1mFJi7w"
+# Sugarcane Version 7
+$sugarcane_url="https://app.roboflow.com/ds/QGCnVydtJT?key=8RL7lwq2vc"
+# Pineapple Version 3
+$pineapple_url="https://app.roboflow.com/ds/NNHeCYvP9D?key=e7w99ztEfE"
 
 # mac向け
 bash download_dataset.sh $sugarcane_url $pineapple_url
