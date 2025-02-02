@@ -12,8 +12,8 @@
 cd manage-dataset
 
 # 環境変数をセット
-# Sugarcane Version 7
-$sugarcane_url="https://app.roboflow.com/ds/QGCnVydtJT?key=8RL7lwq2vc"
+# Sugarcane Version 9
+$sugarcane_url="https://app.roboflow.com/ds/ostMeMAiWj?key=m5xuh2Ai3D"
 # Pineapple Version 3
 $pineapple_url="https://app.roboflow.com/ds/NNHeCYvP9D?key=e7w99ztEfE"
 
